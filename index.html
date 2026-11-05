@@ -25,7 +25,15 @@
 <body>
 
     <header>
-        <h1>Helen Mulugeta</h1>
+
+        <header>
+    <canvas id="logo" width="120" height="120">
+        Helen Mulugeta logo
+    </canvas>
+
+    <h1>Helen Mulugeta</h1>
+
+ 
 
         <img src="images/profile.png" alt="My photo" width="200">
 
@@ -549,6 +557,23 @@ int main() {
         <time datetime="2026-11-05">5 November 2026</time>
     </p>
 </footer>
+<script>
+const canvas = document.getElementById('logo');
+const ctx = canvas.getContext('2d');
 
+ctx.fillStyle = "#1f5fa8";
+ctx.fillRect(0, 0, 120, 120);
+
+ctx.beginPath();
+ctx.arc(60, 60, 45, 0, 2 * Math.PI);
+ctx.fillStyle = "white";
+ctx.fill();
+
+ctx.fillStyle = "#1f5fa8";
+ctx.font = "bold 36px Arial";
+ctx.textAlign = "center";
+ctx.textBaseline = "middle";
+ctx.fillText("HM", 60, 62);
+</script>
 </body>
 </html>
