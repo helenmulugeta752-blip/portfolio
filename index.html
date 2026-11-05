@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,6 +54,14 @@
 
             <p>My goal is to become a full-stack developer.</p>
 
+            <!-- Lab 11: Audio Introduction -->
+            <h3>Listen to My Introduction</h3>
+
+            <audio controls>
+                <source src="media/intro.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
             <p>Mathematical example: X<sup>2</sup></p>
             <p>Chemical example: H<sub>2</sub>O</p>
         </section>
@@ -102,13 +109,17 @@
 
             <article>
                 <h3>Apple Website</h3>
-                <img src="images/apple-project.png" alt="Screenshot of my Apple website project" width="300">
+                <img src="images/apple-project.png"
+                     alt="Screenshot of my Apple website project"
+                     width="300">
                 <p>An Apple-inspired website made using HTML, CSS and JavaScript.</p>
             </article>
 
             <article>
                 <h3>Puppy Page</h3>
-                <img src="images/puppy-project.png" alt="Screenshot of my Puppy Page project" width="300">
+                <img src="images/puppy-project.png"
+                     alt="Screenshot of my Puppy Page project"
+                     width="300">
                 <p>A puppy-themed webpage made using HTML and CSS.</p>
             </article>
 
@@ -330,103 +341,104 @@ int main() {
                       href="mailto:helenmulugeta752@gmail.com"
                       alt="Email">
             </map>
+
             <h3>Send Me a Message</h3>
 
-<form action="thank-you.html" method="get">
+            <form action="thank-you.html" method="get">
 
-   <fieldset>
-    <legend>Your Details</legend>
+                <fieldset>
+                    <legend>Your Details</legend>
 
-    <label for="fullname">Full name:</label>
-    <input type="text" id="fullname" name="fullname" required>
+                    <label for="fullname">Full name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
 
-    <br><br>
+                    <br><br>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
 
-    <br><br>
+                    <br><br>
 
-    <label for="phone">Phone number:</label>
-    <input type="tel" id="phone" name="phone"
-           pattern="0[79][0-9]{8}"
-           title="Enter 10 digits starting with 09 or 07" required>
+                    <label for="phone">Phone number:</label>
+                    <input type="tel" id="phone" name="phone"
+                           pattern="0[79][0-9]{8}"
+                           title="Enter 10 digits starting with 09 or 07" required>
 
-    <br><br>
+                    <br><br>
 
-    <p>Preferred contact method:</p>
+                    <p>Preferred contact method:</p>
 
-    <input type="radio" id="by-email" name="contact-method" value="email" checked>
-    <label for="by-email">Email</label>
+                    <input type="radio" id="by-email" name="contact-method" value="email" checked>
+                    <label for="by-email">Email</label>
 
-    <input type="radio" id="by-phone" name="contact-method" value="phone">
-    <label for="by-phone">Phone</label>
+                    <input type="radio" id="by-phone" name="contact-method" value="phone">
+                    <label for="by-phone">Phone</label>
 
-    <br><br>
+                    <br><br>
 
-    <label for="meeting">Preferred meeting date:</label>
-    <input type="date" id="meeting" name="meeting" min="2026-11-01">
+                    <label for="meeting">Preferred meeting date:</label>
+                    <input type="date" id="meeting" name="meeting" min="2026-11-01">
 
-    <br><br>
+                    <br><br>
 
-    <label for="weeks">Project length (weeks):</label>
-    <input type="number" id="weeks" name="weeks" min="1" max="52" step="1">
+                    <label for="weeks">Project length (weeks):</label>
+                    <input type="number" id="weeks" name="weeks" min="1" max="52" step="1">
 
-    <br><br>
+                    <br><br>
 
-    <label for="brief">Attach a project brief:</label>
-    <input type="file" id="brief" name="brief">
+                    <label for="brief">Attach a project brief:</label>
+                    <input type="file" id="brief" name="brief">
 
-    <br><br>
+                    <br><br>
 
-    <label for="colour">Preferred website colour:</label>
-    <input type="color" id="colour" name="colour" value="#1f5fa8">
+                    <label for="colour">Preferred website colour:</label>
+                    <input type="color" id="colour" name="colour" value="#1f5fa8">
 
-    <br><br>
+                    <br><br>
 
-    <label for="rating">How much do you like my portfolio? (1–10)</label>
-    <input type="range" id="rating" name="rating" min="1" max="10" value="7">
+                    <label for="rating">How much do you like my portfolio? (1–10)</label>
+                    <input type="range" id="rating" name="rating" min="1" max="10" value="7">
 
-</fieldset>
-    <fieldset>
-        <legend>Your Message</legend>
+                </fieldset>
 
-        <label for="reason">Reason for contacting me:</label>
+                <fieldset>
+                    <legend>Your Message</legend>
 
-        <select id="reason" name="reason" required>
-            <optgroup label="Work">
-                <option value="internship">Internship offer</option>
-                <option value="freelance">Freelance project</option>
-                <option value="job">Full-time job</option>
-            </optgroup>
+                    <label for="reason">Reason for contacting me:</label>
 
-            <optgroup label="Study">
-                <option value="group-project">Group project</option>
-                <option value="tutoring">Tutoring</option>
-            </optgroup>
+                    <select id="reason" name="reason" required>
+                        <optgroup label="Work">
+                            <option value="internship">Internship offer</option>
+                            <option value="freelance">Freelance project</option>
+                            <option value="job">Full-time job</option>
+                        </optgroup>
 
-            <option value="other">Other</option>
-        </select>
+                        <optgroup label="Study">
+                            <option value="group-project">Group project</option>
+                            <option value="tutoring">Tutoring</option>
+                        </optgroup>
 
-        <br><br>
+                        <option value="other">Other</option>
+                    </select>
 
-        <label for="message">Message:</label>
-        <br>
+                    <br><br>
 
-        <textarea id="message" name="message" rows="6" cols="40" required></textarea>
-        <br>
+                    <label for="message">Message:</label>
+                    <br>
 
-<input type="checkbox" id="copy" name="copy" value="yes">
-<label for="copy">Send me a copy of this message</label>
+                    <textarea id="message" name="message" rows="6" cols="40" required></textarea>
 
-    </fieldset>
+                    <br>
 
-    <button type="submit">Send Message</button>
-    <button type="reset">Clear</button>
+                    <input type="checkbox" id="copy" name="copy" value="yes">
+                    <label for="copy">Send me a copy of this message</label>
 
-</form>
+                </fieldset>
 
-</form>
+                <button type="submit">Send Message</button>
+                <button type="reset">Clear</button>
+
+            </form>
 
         </section>
 
